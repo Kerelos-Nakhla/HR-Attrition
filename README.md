@@ -1,114 +1,150 @@
-# HR Attrition Analytics Dashboard | Power BI
+# 👥 HR ATTRITION ANALYTICS — POWER BI
 
-An interactive **HR Analytics and Employee Attrition Dashboard** developed as part of the **GBS BI HUB – BI Developer HR Attrition Case Study** interview challenge.
+> **Workforce Analytics | Employee Attrition | Risk Intelligence**
 
-The project analyzes employee attrition, workforce characteristics, job information, satisfaction, compensation, business travel, overtime, and career-related factors to identify patterns associated with employee turnover.
+**HR Attrition Analytics** is an interactive **Power BI Business Intelligence solution** developed as part of the **GBS BI HUB – BI Developer HR Attrition Case Study**.
 
----
-
-## 📌 Project Overview
-
-Employee attrition can create significant operational and financial challenges for organizations. Understanding **who is leaving, where attrition is concentrated, and which employee characteristics are associated with higher turnover** can help HR teams investigate potential retention issues.
-
-This project transforms employee-level data into an interactive Power BI solution that allows users to move from an executive-level overview to detailed employee analysis.
-
-The final report contains three main sections:
-
-* **Landing Page**
-* **Executive Page**
-* **Employee Details**
-
-The dashboard was designed with a strong focus on both **analytical functionality and visual storytelling**, using **Figma for UI/dashboard design** and custom **HTML/CSS-based visuals inside Power BI** to create a more engaging user experience.
+The project transforms employee-level data into an analytical experience covering **attrition, workforce demographics, career progression, compensation, employee drivers, and retention risk**. It combines data preparation, dimensional modeling, DAX, Power Query, Figma-based UI/UX design, and custom HTML/CSS visuals inside Power BI.
 
 ---
 
-## 🎯 Business Problem
+## 🖼️ Dashboard Experience
 
-The objective is to analyze employee attrition and identify workforce segments with relatively high turnover.
+The report is structured as a guided analytical journey:
 
-The analysis focuses on questions such as:
+**Landing → Overview → Driver → Demographic → Career & Pay → Risk Intelligence**
 
-* How many employees have left the organization?
-* What is the overall attrition rate?
-* Which job roles and departments have higher attrition?
-* How does overtime relate to employee turnover?
-* Does business travel appear to be associated with attrition?
-* How do compensation and satisfaction differ between employees who stayed and those who left?
-* Which employee characteristics require deeper investigation?
+### 01 — Landing
 
-The dashboard is designed to support **exploration and investigation rather than simply displaying HR statistics**.
+<p align="center"><img src="./Screenshots/Landing%20Page.png" alt="HR Attrition Analytics — Landing Page" width="900"></p>
 
----
+The entry point to the report, designed to introduce the solution and provide navigation into the analytical sections.
 
-## 🎯 Project Objectives
+### 02 — Overview
 
-* Measure overall employee attrition.
-* Analyze attrition across departments and job roles.
-* Investigate relationships between attrition and overtime.
-* Analyze business travel patterns.
-* Compare compensation between employees who stayed and employees who left.
-* Evaluate employee satisfaction and performance indicators.
-* Provide employee-level details for deeper investigation.
-* Build an interactive, decision-oriented Power BI experience.
-* Create a visually consistent dashboard interface using Figma.
-* Enhance standard Power BI reporting with custom HTML/CSS visuals.
+<p align="center"><img src="./Screenshots/Overview%20Page.png" alt="HR Attrition Analytics — Overview Page" width="900"></p>
 
----
+Executive-level workforce and attrition overview, bringing together core KPIs and high-level workforce patterns.
 
-## 🛠️ Tools & Technologies
+### 03 — Driver
 
-| Tool / Technology | Purpose                                                                            |
-| ----------------- | ---------------------------------------------------------------------------------- |
-| **Power BI**      | Data modeling, analytics, interactive dashboard development                        |
-| **DAX**           | KPI calculations, analytical measures, calculated columns, and custom HTML content |
-| **Power Query**   | Data preparation, transformation, table merging, and model preparation             |
-| **Excel**         | Source dataset                                                                     |
-| **Figma**         | Dashboard UI/UX design, layout planning, and visual design                         |
-| **HTML/CSS**      | Custom visual presentation inside Power BI                                         |
+<p align="center"><img src="./Screenshots/Drivers%20Page.png" alt="HR Attrition Analytics — Driver Page" width="900"></p>
 
----
+Explores factors associated with employee attrition, including overtime, business travel, job characteristics, and employee experience indicators.
 
-## 📊 Dataset
+### 04 — Demographic
 
-The project uses an Excel dataset containing **1,470 employee records and 35 columns**.
+<p align="center"><img src="./Screenshots/Demographic%20Page.png" alt="HR Attrition Analytics — Demographic Page" width="900"></p>
 
-The dataset contains employee demographic, organizational, compensation, satisfaction, performance, and employment-history attributes.
+Analyzes attrition across demographic and organizational segments.
 
-### Main Data Categories
+### 05 — Career & Pay
 
-| Category           | Examples                                                                                 |
-| ------------------ | ---------------------------------------------------------------------------------------- |
-| **Employee**       | Employee Number, Age, Gender, Marital Status                                             |
-| **Organization**   | Department, Job Role, Job Level                                                          |
-| **Compensation**   | Monthly Income, Monthly Rate, Daily Rate, Hourly Rate                                    |
-| **Satisfaction**   | Environment Satisfaction, Job Satisfaction, Relationship Satisfaction, Work Life Balance |
-| **Career History** | Total Working Years, Years at Company, Years in Current Role                             |
-| **Employment**     | Attrition, Over Time, Business Travel                                                    |
-| **Performance**    | Performance Rating, Job Involvement                                                      |
-| **Development**    | Training Times Last Year, Percent Salary Hike                                            |
+<p align="center"><img src="./Screenshots/Career%20%26%20Pay%20Page.png" alt="HR Attrition Analytics — Career and Pay Page" width="900"></p>
 
-The source Excel file contains **no missing values** across the 1,470 records.
+Examines compensation, job level, tenure, career progression, and related workforce characteristics.
+
+### 06 — Risk Intelligence
+
+The Risk Intelligence section contains five analytical views:
+
+<p align="center"><img src="./Screenshots/1-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 1" width="900"></p>
+<p align="center"><img src="./Screenshots/2-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 2" width="900"></p>
+<p align="center"><img src="./Screenshots/3-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 3" width="900"></p>
+<p align="center"><img src="./Screenshots/4-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 4" width="900"></p>
+<p align="center"><img src="./Screenshots/5-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 5" width="900"></p>
+
+These views are designed to move from workforce-level attrition analysis toward **employee retention risk investigation**.
+
+### Data Model
+
+<p align="center"><img src="./Screenshots/Model.png" alt="HR Attrition Analytics — Data Model" width="900"></p>
+
+The model uses a **Snowflake-style dimensional structure** with an employee-level attrition fact table connected to descriptive dimensions.
 
 ---
 
-## 🔄 Data Preparation & Transformation
+## 🎯 Project Objective
 
-The data preparation process was implemented in **Power Query**.
+The objective is to understand **where attrition is concentrated, which employee segments show elevated turnover, and which workforce factors deserve further investigation**.
 
-Key transformations included:
+The solution addresses questions such as:
 
-1. Promoting the first row to column headers.
-2. Renaming source columns into more readable business-friendly names.
-3. Applying appropriate data types.
-4. Creating relationships between the employee-level fact data and dimension tables.
-5. Merging the source data with dimension tables using business keys.
-6. Expanding the corresponding surrogate keys.
-7. Removing redundant attributes from the fact table after the dimension keys were added.
-8. Reordering columns to create a cleaner analytical structure.
+- How many employees have left the organization?
+- What is the overall attrition rate?
+- Which departments and job roles have higher attrition?
+- How does overtime relate to employee turnover?
+- Does business travel show different attrition patterns?
+- How do compensation and satisfaction differ between employees who stayed and those who left?
+- How do career progression and tenure relate to attrition?
+- Which workforce segments should HR investigate further?
 
-Examples of renamed fields include:
+The dashboard is designed for **exploration and investigation**, not simply KPI display.
 
-```text
+---
+
+## 📊 Data at a Glance
+
+The repository contains a structured analytical dataset with **6 Excel tables**:
+
+| Type | Tables | Count |
+|---|---|---:|
+| 📐 Dimensions | Business Travel, Department, Education, Employee, Job | **5** |
+| 📊 Fact | Employee Attrition | **1** |
+| 🗂️ Total analytical tables | Dimensions + Fact | **6** |
+
+The project also includes the original case-study workbook.
+
+### Dataset Structure
+
+| Table | Role |
+|---|---|
+| `fact_attrition.xlsx` | Employee-level attrition and analytical measures |
+| `dim_employee.xlsx` | Employee demographic attributes |
+| `dim_business_travel.xlsx` | Business travel categories |
+| `dim_department.xlsx` | Department attributes |
+| `dim_education.xlsx` | Education and education-field attributes |
+| `dim_job.xlsx` | Job level and job role attributes |
+
+The analytical dataset contains **1,470 employee records and 35 source attributes**.
+
+---
+
+## 🔄 End-to-End BI Workflow
+
+```
+Raw Employee Data
+        ↓
+Data Exploration
+        ↓
+Power Query Transformation
+        ↓
+Dimensional Data Model
+        ↓
+DAX Measures & Calculations
+        ↓
+Power BI Analytics
+        ↓
+Interactive Dashboard
+        ↓
+Attrition & Risk Intelligence
+```
+
+### Power Query
+
+Power Query was used to:
+
+- Promote headers
+- Rename fields into business-friendly names
+- Apply appropriate data types
+- Merge source data with dimension tables
+- Add dimension keys
+- Remove redundant attributes
+- Prepare the final analytical model
+
+Examples include:
+
+```
 BusinessTravel      → Business Travel
 DailyRate           → Daily Rate
 DistanceFromHome    → Distance From Home
@@ -119,118 +155,98 @@ TotalWorkingYears   → Total Working Years
 YearsAtCompany      → Years At Company
 ```
 
-The transformation process separates descriptive employee attributes from the analytical fact table and prepares the data for the Power BI semantic model.
+### DAX
+
+DAX was used to create dynamic KPIs, employee classifications, satisfaction calculations, analytical rankings, and custom HTML/CSS content.
 
 ---
 
-## 🏗️ Data Model
+## 🗂️ Data Model
 
-The Power BI model uses a **Snowflake-style dimensional structure**, with `FACT_Atrition` connected to multiple dimension tables.
+The project uses a **Snowflake-style dimensional model** centered around `FACT_Atrition`.
 
 ### Fact Table
 
 **FACT_Atrition**
 
-Contains employee-level analytical attributes including:
+Contains employee-level analytical attributes such as:
 
-* Employee Number
-* Attrition
-* Monthly Income
-* Distance From Home
-* Daily Rate
-* Hourly Rate
-* Monthly Rate
-* Percent Salary Hike
-* Total Working Years
-* Years At Company
-* Years In Current Role
-* Years Since Last Promotion
-* Years With Current Manager
-* Training Times Last Year
-* Satisfaction metrics
-* Performance Rating
-* Overtime status
-* Stock Option Level
+- Employee Number
+- Attrition
+- Monthly Income
+- Distance From Home
+- Percent Salary Hike
+- Total Working Years
+- Years At Company
+- Years In Current Role
+- Years Since Last Promotion
+- Years With Current Manager
+- Training Times Last Year
+- Satisfaction metrics
+- Performance Rating
+- Overtime
+- Stock Option Level
 
 ### Dimension Tables
 
-#### DIM_Employee
+**DIM_Employee**
+- Employee Number
+- Age
+- Gender
+- Marital Status
 
-* Employee Number
-* Age
-* Gender
-* Marital Status
+**DIM_Business Travel**
+- Business Travel Key
+- Business Travel
 
-#### DIM_Business Travel
+**DIM_Department**
+- Department Key
+- Department
 
-* Business Travel Key
-* Business Travel
+**DIM_Education**
+- Education Key
+- Education
+- Education Field
 
-#### DIM_Department
+**DIM_Job**
+- Job Key
+- Job Level
+- Job Role
 
-* Department Key
-* Department
+### Model Flow
 
-#### DIM_Education
-
-* Education Key
-* Education
-* Education Field
-
-#### DIM_Job
-
-* Job Key
-* Job Level
-* Job Role
-
-### Relationships
-
-The model connects the fact table to the dimensions through keys such as:
-
-```text
-DIM_Employee[Employee Number]
-        ↓
-FACT_Atrition[Employee Number]
-
-DIM_Business Travel[Business Travel Key]
-        ↓
-FACT_Atrition[Business Travel Key]
-
-DIM_Department[Department Key]
-        ↓
-FACT_Atrition[Department Key]
-
-DIM_Education[Education Key]
-        ↓
-FACT_Atrition[Education Key]
-
-DIM_Job[Job Key]
-        ↓
-FACT_Atrition[Job Key]
+```
+DIM_Employee
+       │
+DIM_Business Travel
+       │
+DIM_Department ───► FACT_Atrition
+       │
+DIM_Education
+       │
+DIM_Job
 ```
 
-This structure allows descriptive attributes to be separated from the employee-level analytical data while maintaining a flexible model for reporting.
+This structure separates descriptive attributes from employee-level analytical data and provides a reusable foundation for Power BI reporting.
 
 ---
 
-## 📐 KPIs & DAX Measures
+## 📐 Core KPIs
 
-The semantic model contains dedicated DAX measures for workforce and attrition analysis.
+The semantic model contains dedicated measures for workforce and attrition analysis:
 
-### Core KPIs
-
-| KPI                                   | Definition                                            |
-| ------------------------------------- | ----------------------------------------------------- |
-| **Count Employees**                   | Total number of employees                             |
-| **Count Employees Left**              | Employees where Attrition = Yes                       |
-| **Employees Left %**                  | Employees who left divided by total employees         |
-| **Count Employees Stay**              | Employees where Attrition = No                        |
-| **Count Employees Works Over Time**   | Employees where Over Time = Yes                       |
-| **Count Employees Works Over Time %** | Employees working overtime divided by total employees |
-| **AVG Monthly Salary**                | Average monthly income                                |
-| **AVG Overall Satisfaction**          | Average calculated satisfaction score                 |
-| **AVG Employee Performance**          | Average performance rating                            |
-| **AVG Distance From Home**            | Average employee distance from home                   |
+| KPI | Purpose |
+|---|---|
+| **Count Employees** | Total employee population |
+| **Count Employees Left** | Employees with Attrition = Yes |
+| **Employees Left %** | Overall attrition rate |
+| **Count Employees Stay** | Employees with Attrition = No |
+| **Count Employees Works Over Time** | Employees working overtime |
+| **Count Employees Works Over Time %** | Overtime workforce percentage |
+| **AVG Monthly Salary** | Average monthly income |
+| **AVG Overall Satisfaction** | Average employee satisfaction |
+| **AVG Employee Performance** | Average performance rating |
+| **AVG Distance From Home** | Average employee distance from home |
 
 ### Example DAX
 
@@ -242,7 +258,7 @@ DIVIDE(
 )
 ```
 
-The model also contains a calculated overall satisfaction score:
+An overall satisfaction score is also calculated from four employee-experience measures:
 
 ```DAX
 CC Overall Satisfaction =
@@ -255,349 +271,181 @@ DIVIDE(
 )
 ```
 
-An employee status classification is also created:
+---
 
-```DAX
-Employee Status =
-IF(
-    FACT_Atrition[Attrition] = "Yes",
-    "Left",
-    "Stay"
-)
+## 🔎 Business Analysis
+
+### Attrition Overview
+
+The dataset contains **1,470 employees**, including **237 employees who left**, corresponding to an overall attrition rate of approximately **16.1%**.
+
+### Overtime
+
+Employees working overtime show a substantially different attrition pattern from employees who do not work overtime. This makes overtime an important dimension for HR investigation.
+
+### Business Travel
+
+Frequent business travel also shows a different attrition pattern from employees who do not travel. Travel intensity can therefore be analyzed alongside workload and work-life balance.
+
+### Job Role
+
+Attrition is not evenly distributed across job roles. Role-level analysis helps identify workforce segments that warrant deeper investigation.
+
+### Compensation
+
+Employees who left have a lower average monthly income than employees who stayed in this dataset. Compensation should therefore be examined together with job level, tenure, role, and satisfaction rather than treated as an isolated explanation.
+
+### Career & Pay
+
+Career progression, years at company, years in current role, years since promotion, job level, and monthly income provide additional context for understanding employee retention patterns.
+
+> **Important:** These are observed associations in the dataset. They should not be interpreted as proof that a specific factor causes attrition.
+
+---
+
+## 🧠 Risk Intelligence
+
+The Risk Intelligence section extends the analysis beyond descriptive HR reporting.
+
+It is designed to help users investigate:
+
+- Employee segments with elevated attrition
+- Workforce characteristics associated with turnover
+- Overtime and workload patterns
+- Business travel exposure
+- Career progression
+- Compensation
+- Satisfaction
+- Job and organizational context
+
+The objective is to create a structured path from **What happened? → Where is it concentrated? → What factors should be investigated?**
+
+---
+
+## 🎨 Dashboard Design & UX
+
+The project combines analytics with a deliberate UI/UX workflow.
+
+### Figma
+
+Figma was used to:
+
+- Plan page layouts
+- Establish visual hierarchy
+- Design UI components
+- Refine spacing and alignment
+- Build a consistent visual language
+- Plan navigation before Power BI implementation
+
+### Custom HTML/CSS
+
+DAX-generated **HTML/CSS** was used to create customized Power BI content, particularly for employee-level presentation.
+
+This demonstrates how Power BI can be extended beyond its standard visual library by combining:
+
+**DAX + HTML + CSS + Power BI**
+
+---
+
+## 🛠️ Technology Stack
+
+| Technology | Role |
+|---|---|
+| 📊 **Power BI Desktop** | Data modeling, visualization, navigation, and dashboard development |
+| 🔄 **Power Query** | Data transformation and preparation |
+| 🧮 **DAX** | KPI calculations, classifications, rankings, and custom HTML content |
+| 📗 **Microsoft Excel** | Source and analytical datasets |
+| 🎨 **Figma** | UI/UX and dashboard design |
+| 🌐 **HTML/CSS** | Custom Power BI visual presentation |
+
+---
+
+## 📁 Repository Structure
+
+```
+HR-Attrition/
+│
+├── HR Attrition Case Study.pbix
+├── HR Attrition Case Study.xlsx
+│
+├── Dataset/
+│   ├── dim_business_travel.xlsx
+│   ├── dim_department.xlsx
+│   ├── dim_education.xlsx
+│   ├── dim_employee.xlsx
+│   ├── dim_job.xlsx
+│   └── fact_attrition.xlsx
+│
+├── Screenshots/
+│   ├── Landing Page.png
+│   ├── Overview Page.png
+│   ├── Drivers Page.png
+│   ├── Demographic Page.png
+│   ├── Career & Pay Page.png
+│   ├── 1- Risk Intelligence Page.png
+│   ├── 2- Risk Intelligence Page.png
+│   ├── 3- Risk Intelligence Page.png
+│   ├── 4- Risk Intelligence Page.png
+│   ├── 5- Risk Intelligence Page.png
+│   └── Model.png
+│
+├── LICENSE
+└── README.md
 ```
 
 ---
 
-## 📊 Dashboard
-
-### 1. Landing Page
-
-The landing page acts as the entry point to the report and provides navigation into the analytical experience.
-
-**Purpose:**
-
-* Introduce the HR analytics solution.
-* Provide a clear starting point for users.
-* Navigate users toward the analytical sections.
-* Establish the visual identity of the dashboard.
-
-The page design was planned and refined using **Figma** before being implemented in Power BI.
-
----
-
-### 2. Executive Page
-
-The Executive Page provides a high-level view of the workforce and attrition situation.
-
-It brings together KPIs and analytical visuals to help users understand:
-
-* Overall employee population.
-* Employees who left.
-* Employee retention.
-* Overtime patterns.
-* Compensation.
-* Satisfaction.
-* Workforce characteristics.
-* Attrition distribution across organizational dimensions.
-
-The page is designed to help decision-makers identify areas that require deeper investigation.
-
----
-
-### 3. Employee Details
-
-The Employee Details page provides a more granular view of the employee population.
-
-The report includes a custom employee directory built using a **DAX-generated HTML/CSS visual**.
-
-The table presents information such as:
-
-* Employee ID
-* Gender
-* Department
-* Job Role
-* Job Level
-* Employee Status
-
-Employee status is visually represented as **Stay** or **Left**, allowing users to scan employee-level information quickly.
-
-The HTML-based approach provides greater control over the presentation than a standard Power BI table visual.
-
----
-
-## 🎨 Dashboard Design & Visual Development
-
-A major part of the project focused on combining **data analytics with professional dashboard design**.
-
-### Figma
-
-**Figma** was used during the dashboard design process to:
-
-* Plan page layouts.
-* Establish visual hierarchy.
-* Design UI components.
-* Refine spacing and alignment.
-* Create a consistent dashboard interface.
-* Plan the overall user experience before implementation.
-
-### Custom HTML/CSS Visuals
-
-Custom **HTML/CSS content generated through DAX** was used to create a more customized employee-level experience.
-
-The HTML visual includes elements such as:
-
-* Employee information.
-* Employee status badges.
-* Job-level indicators.
-* Custom table styling.
-* Dynamic content generated from Power BI data.
-
-This demonstrates how Power BI can be extended beyond its standard visual library by combining **DAX, HTML, and CSS**.
-
----
-
-## 🔎 Key Insights
-
-The following findings are calculated directly from the 1,470 employee records.
-
-### 1. Overall Attrition
-
-There are **237 employees who left**, representing an overall attrition rate of approximately **16.1%**.
-
-> **Business Meaning:**
-> Attrition affects a meaningful portion of the workforce and provides a clear starting point for identifying higher-risk employee segments.
-
----
-
-### 2. Overtime Is Strongly Associated With Higher Attrition
-
-Employees working overtime have an attrition rate of approximately **30.5%**, compared with **10.4%** among employees who do not work overtime.
-
-> **Business Meaning:**
-> Workload and overtime should be investigated as potential factors contributing to employee turnover.
-
----
-
-### 3. Frequent Business Travel Shows Higher Attrition
-
-Employees who travel frequently have an attrition rate of approximately **24.9%**, compared with **8.0%** among employees who do not travel.
-
-> **Business Meaning:**
-> Frequent travel may represent an employee experience factor worth investigating alongside workload, role, and work-life balance.
-
----
-
-### 4. Sales Representatives Have the Highest Attrition Rate
-
-The **Sales Representative** role has an attrition rate of approximately **39.8%**, the highest among the job roles in the dataset.
-
-> **Business Meaning:**
-> This role represents a high-priority segment for deeper investigation into workload, compensation, career progression, and employee experience.
-
----
-
-### 5. Employees Who Left Have Lower Average Monthly Income
-
-Average monthly income is approximately:
-
-* **$4,787** for employees who left.
-* **$6,833** for employees who stayed.
-
-> **Business Meaning:**
-> Compensation appears to be an important factor to investigate, although the analysis alone does not establish causation.
-
----
-
-## 💡 Business Recommendations
-
-Based on the observed patterns, several areas could be investigated further:
-
-### 1. Investigate Overtime
-
-Review workload distribution and overtime requirements, particularly within teams experiencing elevated attrition.
-
-### 2. Examine High-Attrition Roles
-
-Conduct deeper analysis of roles such as **Sales Representative** to understand whether compensation, workload, career progression, or satisfaction contributes to turnover.
-
-### 3. Review Frequent Business Travel
-
-Evaluate whether frequent travel is affecting employee experience, work-life balance, or retention.
-
-### 4. Analyze Compensation Alongside Other Factors
-
-Employees who left have lower average monthly income, so compensation should be investigated together with job level, tenure, role, and satisfaction rather than treated as an isolated factor.
-
-> These recommendations represent areas for further business investigation based on observed patterns in the dataset, not causal conclusions.
-
----
-
-## 🧠 Key Learnings
-
-This project strengthened several areas of my Power BI and data analytics workflow.
-
-### Data Modeling
-
-* Designing fact and dimension tables.
-* Working with a Snowflake-style dimensional model.
-* Using keys to connect analytical and descriptive data.
-
-### DAX
-
-* `COUNTROWS`
-* `COUNTX`
-* `FILTER`
-* `DIVIDE`
-* `AVERAGE`
-* `MAX`
-* `MIN`
-* `RELATED`
-* `RANKX`
-* `SWITCH`
-* Calculated columns
-* Context-aware analytical calculations
-
-### Power Query
-
-* Data type management.
-* Column renaming.
-* Table merging.
-* Dimension key integration.
-* Removing redundant attributes.
-* Preparing data for the semantic model.
-
-### Data Visualization
-
-* Designing executive-oriented dashboards.
-* Moving from high-level KPIs to detailed employee analysis.
-* Building a consistent visual hierarchy.
-* Using visual indicators to improve interpretation.
-
-### UI/UX & Dashboard Design
-
-* Dashboard layout design using Figma.
-* Visual hierarchy and component design.
-* Consistent spacing and alignment.
-* Designing interfaces before Power BI implementation.
-
-### Advanced Power BI
-
-The project also provided practical experience with **DAX-generated HTML/CSS content inside Power BI**, demonstrating how analytical logic can be combined with custom presentation techniques.
-
----
-
-## ⚙️ Challenges & Solutions
-
-### Challenge: Creating a Structured Analytical Model
-
-The raw dataset contained employee attributes and analytical fields together.
-
-### Solution
-
-The model was transformed into a dimensional structure with `FACT_Atrition` supported by employee, department, education, job, and business-travel dimensions.
-
-### Result
-
-The resulting model provides a more organized foundation for analytical reporting and allows descriptive attributes to be managed independently from the fact-level data.
-
----
-
-### Challenge: Creating a More Detailed Employee View
-
-Standard Power BI table visuals can limit the level of customization available for an employee-directory experience.
-
-### Solution
-
-A DAX measure was used to dynamically generate HTML content containing employee information, status badges, job-level indicators, and custom table elements.
-
-### Result
-
-The Employee Details page provides a more customized employee-directory experience while still being driven by the underlying Power BI data model.
-
----
-
-### Challenge: Balancing Analytics and Visual Design
-
-A dashboard can contain accurate analysis but still be difficult to use if the visual hierarchy and user experience are not carefully designed.
-
-### Solution
-
-Figma was used to plan the dashboard interface and refine the visual structure before implementation in Power BI.
-
-### Result
-
-The final dashboard combines analytical functionality with a more deliberate UI/UX approach.
-
----
-
-## 💼 Skills Demonstrated
-
-### Data Analytics
-
-* Exploratory Data Analysis
-* HR Analytics
-* Attrition Analysis
-* KPI Development
-* Business Insight Generation
-* Employee Segmentation
-
-### Power BI
-
-* Data Modeling
-* DAX
-* Power Query
-* Interactive Dashboards
-* KPI Design
-* Custom HTML/CSS Visual Content
-* Report Navigation
-
-### UI/UX & Visualization
-
-* Figma
-* Dashboard UI Design
-* Visual Hierarchy
-* Data Storytelling
-* Custom Visual Design
-* HTML/CSS
-
-### Business Intelligence
-
-* Business Problem Definition
-* Analytical Storytelling
-* Executive Reporting
-* Insight Interpretation
-* Business-Oriented Recommendations
-
----
-
-## ▶️ How to Explore the Project
-
-### Power BI
+## ▶️ How to Explore
 
 1. Clone or download the repository.
-2. Open the Power BI project/report.
-3. If required, update the source-data path to the included Excel dataset.
+2. Open **HR Attrition Case Study.pbix** in Power BI Desktop.
+3. If required, update the Excel source path.
 4. Refresh the model.
-5. Navigate through the Landing Page, Executive Page, and Employee Details sections.
-6. Use the available filters and interactions to explore the analysis.
+5. Navigate through:
+   **Landing → Overview → Driver → Demographic → Career & Pay → Risk Intelligence**
+6. Use the available filters and interactions to investigate the workforce.
 
-### Important
-
-The original Power Query source references a local Excel file path. When moving the project to another environment, the data source path may need to be updated before refreshing the model.
+> **Note:** The original Power Query source references a local Excel path. When opening the report in another environment, the source path may need to be updated before refreshing.
 
 ---
 
-## 📌 Project Context
+## 📚 Project Context
 
 **GBS BI HUB – BI Developer HR Attrition Case Study**
 
-This project was developed as part of an **interview case study** to demonstrate practical capabilities in:
+This project demonstrates practical capabilities in:
 
-* Power BI development
-* Data modeling
-* DAX
-* Power Query
-* Data visualization
-* Figma-based dashboard design
-* HTML/CSS custom visuals
-* Business-oriented analytics
+- HR Analytics
+- Data Analysis
+- Power BI
+- DAX
+- Power Query
+- Dimensional Data Modeling
+- Data Visualization
+- Figma UI/UX
+- HTML/CSS Custom Visuals
+- Business Insight Generation
+- Risk-Oriented Workforce Analysis
+
+---
+
+## 👤 Author
+
+**Kerelos Nakhla**
+
+**Data Analyst | BI Developer**
+
+- GitHub: [Kerelos-Nakhla](https://github.com/Kerelos-Nakhla)
+- LinkedIn: [Kerelos Nakhla](https://www.linkedin.com/in/kerelos-nakhla/)
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+See [LICENSE](./LICENSE) for the complete license text.
+
+---
+
+⭐ **Explore the repository to review the Power BI report, analytical dataset, data model, dashboard pages, and HR attrition analysis.**
