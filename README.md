@@ -399,7 +399,7 @@ This demonstrates how Power BI can be extended beyond its standard visual librar
 ```
 HR-Attrition/
 │
-├── Dataset/
+├── Data/
 │   ├── dim_business_travel.xlsx
 │   ├── dim_department.xlsx
 │   ├── dim_education.xlsx
