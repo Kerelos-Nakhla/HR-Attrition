@@ -8,7 +8,7 @@ The project transforms employee-level data into an analytical experience coverin
 
 ---
 
-## 🖼️ Dashboard Experience
+## Dashboard Screenshots
 
 The report is structured as a guided analytical journey:
 
