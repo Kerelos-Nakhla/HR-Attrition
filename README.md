@@ -273,31 +273,67 @@ DIVIDE(
 
 ## 🔎 Business Analysis
 
-### Attrition Overview
+The analysis below is calculated from the **1,470 employee records** represented by the project dataset and focuses on observed attrition patterns rather than causal claims.
 
-The dataset contains **1,470 employees**, including **237 employees who left**, corresponding to an overall attrition rate of approximately **16.1%**.
+### Workforce Snapshot
 
-### Overtime
+| Metric | Result |
+|---|---:|
+| Total Employees | **1,470** |
+| Employees Who Left | **237** |
+| Employees Who Stayed | **1,233** |
+| Overall Attrition Rate | **16.1%** |
 
-Employees working overtime show a substantially different attrition pattern from employees who do not work overtime. This makes overtime an important dimension for HR investigation.
+### Key Attrition Findings
 
-### Business Travel
+| Area | Observed Pattern |
+|---|---|
+| **Overtime** | **30.5%** attrition among overtime employees vs **10.4%** without overtime — a **20.1 percentage-point** difference |
+| **Business Travel** | **24.9%** attrition for frequent travelers vs **14.9%** for rare travelers and **8.0%** for non-travelers |
+| **Department** | Sales: **20.6%**; Human Resources: **19.0%**; Research & Development: **13.8%** |
+| **Job Role** | Sales Representatives: **39.8%**; Laboratory Technicians: **23.9%**; Human Resources: **23.1%** |
+| **Age** | Employees aged **18–25: 35.8%** attrition; 26–34: **20.1%** |
+| **Marital Status** | Single employees: **25.5%** vs Married: **12.5%** |
+| **Job Level** | Level 1: **26.3%** attrition vs Level 4: **4.7%** and Level 5: **7.2%** |
+| **Job Satisfaction** | Satisfaction level 1: **22.8%** attrition vs level 4: **11.3%** |
+| **Work-Life Balance** | Level 1: **31.3%** attrition vs level 3: **14.2%** |
+| **Environment Satisfaction** | Level 1: **25.4%** attrition vs level 4: **13.5%** |
 
-Frequent business travel also shows a different attrition pattern from employees who do not travel. Travel intensity can therefore be analyzed alongside workload and work-life balance.
+### Compensation & Career Context
 
-### Job Role
+Employees who left had an average monthly income of approximately **4,787**, compared with **6,833** among employees who stayed — an average difference of about **2,046 per month**.
 
-Attrition is not evenly distributed across job roles. Role-level analysis helps identify workforce segments that warrant deeper investigation.
+The average **Years At Company** was approximately **5.1 years** for employees who left versus **7.4 years** for employees who stayed.
 
-### Compensation
+Average distance from home was also higher among employees who left (**10.6**) than employees who stayed (**8.9**) in the dataset's recorded distance measure.
 
-Employees who left have a lower average monthly income than employees who stayed in this dataset. Compensation should therefore be examined together with job level, tenure, role, and satisfaction rather than treated as an isolated explanation.
+### Highest-Attrition Segments
 
-### Career & Pay
+The following segments show the largest observed attrition rates among the major categorical dimensions:
 
-Career progression, years at company, years in current role, years since promotion, job level, and monthly income provide additional context for understanding employee retention patterns.
+- **Sales Representative:** 39.8%
+- **Age 18–25:** 35.8%
+- **Overtime = Yes:** 30.5%
+- **Work-Life Balance level 1:** 31.3%
+- **Job Level 1:** 26.3%
+- **Single employees:** 25.5%
+- **Environment Satisfaction level 1:** 25.4%
+- **Frequent business travel:** 24.9%
 
-> **Important:** These are observed associations in the dataset. They should not be interpreted as proof that a specific factor causes attrition.
+These segments should be treated as **investigation areas**, not as evidence that the underlying factor independently causes employee attrition.
+
+### Business Interpretation
+
+The data suggests several areas for HR investigation:
+
+1. **Workload:** Overtime is associated with a materially higher observed attrition rate.
+2. **Mobility:** Frequent business travel has a higher observed attrition rate than other travel categories.
+3. **Early-career retention:** Younger employees and employees at lower job levels show higher observed attrition.
+4. **Role concentration:** Attrition varies substantially by job role, with Sales Representatives showing the highest observed rate in this dataset.
+5. **Employee experience:** Lower satisfaction and work-life-balance ratings are associated with higher observed attrition rates.
+6. **Compensation and tenure:** Employees who left have lower average income and shorter average tenure than employees who stayed.
+
+> **Important:** These are descriptive associations observed in the dataset. They should not be interpreted as proof that a specific factor causes attrition, and segment size should always be considered alongside the percentage.
 
 ---
 
