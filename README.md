@@ -51,6 +51,7 @@ The Risk Intelligence section contains five analytical views:
 <p align="center"><img src="./Screenshots/1-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 1" width="900"></p>
 <p align="center"><img src="./Screenshots/2-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 2" width="900"></p>
 <p align="center"><img src="./Screenshots/3-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 3" width="900"></p>
+<p align="center"><img src="./Screenshots/4-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 4" width="900"></p>
 <p align="center"><img src="./Screenshots/5-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 5" width="900"></p>
 
 These views are designed to move from workforce-level attrition analysis toward **employee retention risk investigation**.
@@ -426,7 +427,7 @@ This project demonstrates practical capabilities in:
 **Data Analyst | BI Developer**
 
 - GitHub: [Kerelos-Nakhla](https://github.com/Kerelos-Nakhla)
-- LinkedIn: [Kerelos Nakhla](https://www.linkedin.com/in/kerelos-nakhla/)
+- LinkedIn: [Kerelos Nakhla](https://www.linkedin.com/in/Kerelos-Nakhla/)
 
 ---
 
@@ -438,4 +439,4 @@ See [LICENSE](./LICENSE) for the complete license text.
 
 ---
 
-⭐ **Explore the repository to review the Power BI report, analytical dataset, data model, dashboard pages, and HR attrition analysis.**
+⭐ **Explore the repository to review the analytical dataset, data model, dashboard pages, and HR attrition analysis.**
