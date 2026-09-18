@@ -51,7 +51,6 @@ The Risk Intelligence section contains five analytical views:
 <p align="center"><img src="./Screenshots/1-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 1" width="900"></p>
 <p align="center"><img src="./Screenshots/2-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 2" width="900"></p>
 <p align="center"><img src="./Screenshots/3-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 3" width="900"></p>
-<p align="center"><img src="./Screenshots/4-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 4" width="900"></p>
 <p align="center"><img src="./Screenshots/5-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 5" width="900"></p>
 
 These views are designed to move from workforce-level attrition analysis toward **employee retention risk investigation**.
@@ -92,8 +91,6 @@ The repository contains a structured analytical dataset with **6 Excel tables**:
 | 📐 Dimensions | Business Travel, Department, Education, Employee, Job | **5** |
 | 📊 Fact | Employee Attrition | **1** |
 | 🗂️ Total analytical tables | Dimensions + Fact | **6** |
-
-The project also includes the original case-study workbook.
 
 ### Dataset Structure
 
@@ -365,9 +362,6 @@ This demonstrates how Power BI can be extended beyond its standard visual librar
 ```
 HR-Attrition/
 │
-├── HR Attrition Case Study.pbix
-├── HR Attrition Case Study.xlsx
-│
 ├── Dataset/
 │   ├── dim_business_travel.xlsx
 │   ├── dim_department.xlsx
@@ -398,14 +392,10 @@ HR-Attrition/
 ## ▶️ How to Explore
 
 1. Clone or download the repository.
-2. Open **HR Attrition Case Study.pbix** in Power BI Desktop.
-3. If required, update the Excel source path.
-4. Refresh the model.
-5. Navigate through:
+2. Review the screenshots and analytical dataset.
+3. Navigate through the documented report flow:
    **Landing → Overview → Driver → Demographic → Career & Pay → Risk Intelligence**
-6. Use the available filters and interactions to investigate the workforce.
-
-> **Note:** The original Power Query source references a local Excel path. When opening the report in another environment, the source path may need to be updated before refreshing.
+4. Use the dataset to reproduce or extend the analysis in Power BI.
 
 ---
 
