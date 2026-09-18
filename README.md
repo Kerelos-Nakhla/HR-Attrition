@@ -16,31 +16,31 @@ The report is structured as a guided analytical journey:
 
 ### 01 — Landing
 
-<p align="center"><img src="./Screenshots/Landing%20Page.png" alt="HR Attrition Analytics — Landing Page" width="900"></p>
+<p align="center"><img src="./Dashboard%20Previews/Landing%20Page.png" alt="HR Attrition Analytics — Landing Page" width="900"></p>
 
 The entry point to the report, designed to introduce the solution and provide navigation into the analytical sections.
 
 ### 02 — Overview
 
-<p align="center"><img src="./Screenshots/Overview%20Page.png" alt="HR Attrition Analytics — Overview Page" width="900"></p>
+<p align="center"><img src="./Dashboard%20Previews/Overview%20Page.png" alt="HR Attrition Analytics — Overview Page" width="900"></p>
 
 Executive-level workforce and attrition overview, bringing together core KPIs and high-level workforce patterns.
 
 ### 03 — Driver
 
-<p align="center"><img src="./Screenshots/Drivers%20Page.png" alt="HR Attrition Analytics — Driver Page" width="900"></p>
+<p align="center"><img src="./Dashboard%20Previews/Drivers%20Page.png" alt="HR Attrition Analytics — Driver Page" width="900"></p>
 
 Explores factors associated with employee attrition, including overtime, business travel, job characteristics, and employee experience indicators.
 
 ### 04 — Demographic
 
-<p align="center"><img src="./Screenshots/Demographic%20Page.png" alt="HR Attrition Analytics — Demographic Page" width="900"></p>
+<p align="center"><img src="./Dashboard%20Previews/Demographic%20Page.png" alt="HR Attrition Analytics — Demographic Page" width="900"></p>
 
 Analyzes attrition across demographic and organizational segments.
 
 ### 05 — Career & Pay
 
-<p align="center"><img src="./Screenshots/Career%20%26%20Pay%20Page.png" alt="HR Attrition Analytics — Career and Pay Page" width="900"></p>
+<p align="center"><img src="./Dashboard%20Previews/Career%20%26%20Pay%20Page.png" alt="HR Attrition Analytics — Career and Pay Page" width="900"></p>
 
 Examines compensation, job level, tenure, career progression, and related workforce characteristics.
 
@@ -48,17 +48,17 @@ Examines compensation, job level, tenure, career progression, and related workfo
 
 The Risk Intelligence section contains five analytical views:
 
-<p align="center"><img src="./Screenshots/1-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 1" width="900"></p>
-<p align="center"><img src="./Screenshots/2-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 2" width="900"></p>
-<p align="center"><img src="./Screenshots/3-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 3" width="900"></p>
-<p align="center"><img src="./Screenshots/4-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 4" width="900"></p>
-<p align="center"><img src="./Screenshots/5-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 5" width="900"></p>
+<p align="center"><img src="./Dashboard%20Previews/1-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 1" width="900"></p>
+<p align="center"><img src="./Dashboard%20Previews/2-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 2" width="900"></p>
+<p align="center"><img src="./Dashboard%20Previews/3-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 3" width="900"></p>
+<p align="center"><img src="./Dashboard%20Previews/4-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 4" width="900"></p>
+<p align="center"><img src="./Dashboard%20Previews/5-%20Risk%20Intelligence%20Page.png" alt="Risk Intelligence Page 5" width="900"></p>
 
 These views are designed to move from workforce-level attrition analysis toward **employee retention risk investigation**.
 
 ### Data Model
 
-<p align="center"><img src="./Screenshots/Model.png" alt="HR Attrition Analytics — Data Model" width="900"></p>
+<p align="center"><img src="./Dashboard%20Previews/Model.png" alt="HR Attrition Analytics — Data Model" width="900"></p>
 
 The model uses a **Snowflake-style dimensional structure** with an employee-level attrition fact table connected to descriptive dimensions.
 
