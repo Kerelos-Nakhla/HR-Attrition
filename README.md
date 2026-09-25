@@ -25,6 +25,13 @@ The **HR Attrition & Workforce Intelligence Dashboard** is an executive people-a
 
 ---
 
+
+## Business Questions & Key Analytical Takeaways
+- **Attrition scale:** 237 of 1,470 employees left the organization, meaning roughly **1 in every 6.2 employees** in the dataset departed.
+- **Retention baseline:** The retained workforce represents **83.88%** of the population, establishing the baseline for comparing departments, roles, tenure bands, and other segments.
+- **Risk-driver structure:** The analysis focuses on overtime, satisfaction, commute distance, tenure, and promotion latency, allowing attrition to be examined as a combination of workload, engagement, and career-progression factors.
+- **Career-stage focus:** The dashboard specifically examines the 2–4 year tenure window and promotion timing, supporting a targeted investigation of where attrition pressure is concentrated.
+
 ## Dashboard Visual Tour & Storytelling
 
 ### 1. Landing
